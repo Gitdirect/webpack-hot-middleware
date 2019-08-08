@@ -5,11 +5,11 @@ jobs:
   base-size:
     name: Linux Machine Default Build
     runs-on: ubuntu-18.04
-
     steps:
-      - run:
-          name: Install Dependencies
-          command: npm install
+    - uses: actions/checkout@master
+    - name: Install Dependencies
+      run: |
+          npm install
 
 
 
